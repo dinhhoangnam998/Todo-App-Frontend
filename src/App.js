@@ -5,8 +5,8 @@ import axios from "axios";
 
 import "bootstrap/dist/css/bootstrap.min.css";
 
-axios.defaults.baseURL = "https://todo-app-recode-backend.herokuapp.com";
-console.log("🚧 -->  process.env.BACKEND_URL", process.env.BACKEND_URL);
+axios.defaults.baseURL = process.env.BACKEND_URL;
+// console.log("🚧 -->  process.env.BACKEND_URL", process.env.BACKEND_URL);
 
 function App() {
   return (
